@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo nited flavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+          crossorigin="anonymous" />
+
+    <title>Portfolio NitedWebs</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nited Webs</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT US</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="IMG_20230325_232606_567.jpg" alt="">
+            </div>
+            <h1>NITED WEBS</h1>
+            <h2>{ Front End Jr Developers }</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100091628051901&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nitedwesb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@nited.webs?_t=8iusbFJ5Rg5&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="mailto:info.nitedwebs@gmail.com?subject=%22Enter%20the%20subject%20of%20your%20inquiry%20here%22&body=Here%20describe%20in%20detail%20your%20query%20and%20what%20you%20are%20looking%20for.%20We%20will%20respond%20as%20soon%20as%20possible.%0AThanks%20Nited%20Team."><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://wa.me/1136817088" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ABOUT US -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Us</h2>
+            <p><span>"Hi! we are a team of web developers!"</span> We are a group passionate about programming. We started as a hobby, then realized that we could help grow people's businesses with a professional website. That's why we created Nited Webs!</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Phone</strong>
+                            11 3681-7088
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            info.nitedwebs@gmail.com
+                        </li>
+                        <li>
+                            <strong>Adress</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Work Position</strong>
+                            <span>FREELANCERS WORKER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVEL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>COMPUTING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>LEARN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            <span>STUDY</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Front-End</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Back-End</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Social networks & marketing</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educatión</h3>
+                    <div class="item izq">
+                        <h4>Argentina Programa</h4>
+                        <span class="casa">University of La Punta, San Luis.</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>"Studies completed. We started with basic programming logic, and later delved into Front-End languages such as 'HTML and CSS.' Subsequently, for Back-End, we studied JavaScript."</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Argentina Programa</h4>
+                        <span class="casa">INTI</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Specialized course in Front End "HTML & CSS" and JavaScript.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Java Script & Python</h4>
+                        <span class="casa">Fundación Pupi</span>
+                        <span class="fecha">2023 - Present</span>
+                        <p>Currently, I am studying this Back End course, which culminates in graduating with honors in the languages JavaScript and Python.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+        </div>
+
+        <a class="nature-gourmet" href="nature gourmet portfolio/naturegourmet.html" target="_blank">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="nature-gourmet.png" class="card-img-top" alt="Nature Gourmet">
+                    <div class="card-body">
+                      <h5 class="card-title">Nature Gourmet. Restaurant with responsive page</h5>
+                      <p class="card-text">Responsive design means it will look good on all mobile devices. If you want to see how it looks click here!</p>
+                    </div>
+                  </div>
+                </div>
+                   <a class="del-mar-resto" href="Del Mar Restó/maresto.html" target="_blank">
+                    <div class="card">
+                      <img src="Del Mar Restó.png" class="card-img-top" alt="Del Mar Restó">
+                      <div class="card-body">
+                        <h5 class="card-title">Del Mar Restó</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                   </a>     
+                </div>
+            </div>    
+        </a>
+
+    </section>   
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <section class="col-6">
+                    <fieldset>
+                      <legend>Contact Us</legend>
+                      <form action="https://getform.io/f/19f699e9-587d-45ce-aac5-8db569367f4e" method="post">
+                        
+                        <label>Your name</label><br>
+                        <input type="name" name="name" required>
+                        <br><br>
+
+                        <label>Phone number</label><br>
+                        <input type="phone" name="phone" placeholder="number with area code" required>
+                        <br><br>
+                        
+                        <label>Email</label><br>
+                        <input type="email" name="email" required>
+                        
+                        <br><br>
+                        <label>Email subject</label><br>
+                        <select name="motivo" required>
+                          <option value="Mas informacion" selected>I want more info</option>
+                          <option value="Quiere una página" >I want a website</option>
+                        </select>
+                        
+                        <br><br>
+                        <label>Message</label><br>
+                        <textarea name="mensaje" placeholder="Message explaining what your query is about. We will respond as soon as possible" required></textarea>
+                        
+                        <br><br>
+                        <button type="submit">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                      </form>
+                    </fieldset>
+                  </section>
+                  
+                  <div class="bigspace"></div>
+                <!-- Datos Nuestros -->
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Buenos Aires, Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Send us a whatsapp: +54 11 3681-7088 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nitedwebs@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100091628051901&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nitedwesb/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@nited.webs?_t=8iusbFJ5Rg5&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/in/nitedwebs" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:info.nitedwebs@gmail.com?subject=%22Enter%20the%20subject%20of%20your%20inquiry%20here%22&body=Here%20describe%20in%20detail%20your%20query%20and%20what%20you%20are%20looking%20for.%20We%20will%20respond%20as%20soon%20as%20possible.%0AThanks%20Nited%20Team."><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/NitedWebs" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/1136817088" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

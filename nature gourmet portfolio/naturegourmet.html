@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nature Gourmet Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Brote nature gourmet flavicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Nature Gourmet</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-about us" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Starter</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Main Course</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Dessert</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Drinks</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-reservations" href="#">Reservations</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">WhatsApp</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Email</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <div class="hero">
+      <h1>Nature Gourmet</h1>
+      <p>Welcome to a unique culinary experience.</p>
+      <a href="#reservas" class="btn-reserva">Make a reservation.</a>
+      
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a high-end restaurant committed to providing an exceptional culinary experience. Our team of expert chefs uses fresh and quality ingredients to create innovative and exquisite dishes. In our elegant ambiance, coupled with impeccable service, we guarantee an unforgettable evening.</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="container">
+      <h2>Our menu</h2>
+      <p>Explore our selection of exquisite dishes.</p>
+      <div class="menu-item">
+        <img src="sushi.jpg" alt="Plato 1">
+        <div class="menu-item-details">
+          <h3>Starter </h3>
+          <p>Description.</p>
+          <span class="precio">$15</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="comida.jpg" alt="Plato 2">
+        <div class="menu-item-details">
+          <h3>Main Course</h3>
+          <p>Description.</p>
+          <span class="precio">$35</span>
+        </div>
+      </div>
+      <!-- Agregar más elementos de menú aquí -->
+    </div>
+  </section>
+
+  <section id="reservas">
+    <div class="container">
+      <h2>Reservations</h2>
+      <p>Reserve a table to enjoy an unparalleled gastronomic experience.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone">
+        <input type="date" placeholder="Date">
+        <input type="time" placeholder="Time">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Contact us for any questions or additional information!</p>
+      <form>
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo electrónico">
+        <textarea placeholder="Mensaje"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-column">
+        <h3>Address</h3>
+        <p>123 Main Street, City, Country</p>
+      </div>
+      <div class="footer-column">
+        <h3>Phone</h3>
+        <p>+123 456 789</p>
+      </div>
+      <div class="footer-column">
+        <h3>Email</h3>
+        <p>info@restaurantegourmet.com</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow us on</h3>
+        <ul class="social-media">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p>&copy; 2024 Nature Gourmet Restaurant. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
