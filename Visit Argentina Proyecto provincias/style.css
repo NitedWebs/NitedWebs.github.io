@@ -111,7 +111,8 @@ header a:hover{
 }
 .carousel .list .item .des{
     text-shadow: 3px 1.5px 2px #000;
-    overflow: hidden;
+    overflow: scroll;
+    height: 250px;
 }
 .carousel .list .item .buttons{
     display: grid;
